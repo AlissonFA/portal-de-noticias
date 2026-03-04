@@ -10,7 +10,7 @@
         position: relative;
 
         &::before { /* seria a mesma coisa de fazer: .card::before; ele é necessário ai porque não dá pra iniciar só com os 2 pontinhos */
-            content: "";
+            content: ""; /* Quando usa ::before ou ::after para adicionar elementos visuais que não existem no HTML, o CSS precisa dessa propriedade para "ativar" o pseudo-elemento, mesmo que o conteúdo dentro das aspas esteja vazio. */
             position: absolute;
             inset: 0;
             top: 50%;
@@ -19,6 +19,16 @@
                 transparent 0%,
                 #020617 100%
             );
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 24px;
+
+            h2 {
+                margin-top: 8px;
+            }
         }
     }
 }
