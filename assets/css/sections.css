@@ -11,10 +11,10 @@ section header {
         span {
             background-image: url(../icons/ArrowRight.svg);
 
-            /* isso aqui vai servir para corrigir um bug no icone que ele ficava se repetindo e com tamanho diferente, no projeto do professor não aconteceu, mas no meu sim */
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+            background-repeat: no-repeat; /* isso aqui vai servir para corrigir um bug no icone que ele ficava se repetindo, no projeto do professor não aconteceu, mas no meu sim */
+            background-position: center; /* para corrigir a diferença de alinhamento */
+            background-size: contain; /* para corrigir a diferença de tamanho */
+
             width: 16px;
             height: 16px;
         }
