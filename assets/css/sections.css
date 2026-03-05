@@ -9,7 +9,12 @@ section header {
         gap: 8px;
 
         span {
-            background-image: url(../icons/ArrowRight.svg); /* eu acho que isso está quebrado, posteriormente tenho que me lembrar de corrigir antes de finalizar o projeto; a imagem da seta está bugada */
+            background-image: url(../icons/ArrowRight.svg);
+
+            /* isso aqui vai servir para corrigir um bug no icone que ele ficava se repetindo e com tamanho diferente, no projeto do professor não aconteceu, mas no meu sim */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
             width: 16px;
             height: 16px;
         }
